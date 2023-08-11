@@ -1,0 +1,42 @@
+/* universal*/
+* {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color:white;
+}
+
+/* selector */
+body {
+background-color: lemonchiffon;
+}
+
+/* Multiple  selector for each selector separated by a coma*/
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #13293d;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+footer {
+width: 100%;
+height: 100px;
+line-height: 100px;
+color: #f0ead6;
+background-color: #191970;
+}
+
+/* id selector */
+#about-me-section,
+#my-work,
+#contact-section {
+background-color: #f0ead6;
+}
