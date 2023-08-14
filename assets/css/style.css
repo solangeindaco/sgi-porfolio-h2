@@ -28,7 +28,8 @@ header{
 }
 
 header h1{
-  padding-left: 5px;
+  padding-left: 10px;
+  background-color: var(--light-blue);
 }
 
 nav ul {
@@ -108,6 +109,7 @@ aside {
 
 .my-work{
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   /* Uses 60% the height of the viewport */
   height:60vh;
@@ -136,7 +138,8 @@ aside {
 
 
 /* Image Placeholders */
-.sample-img {
+.developer-work {
+  position:relative;
   width: 50%;
   height: 20%;
   border: 5px solid var(--light-blue);
@@ -144,8 +147,22 @@ aside {
 
 /* Put the image more clear when the user hover over the image*/
 
-.sample-img:hover{
+.developer-work:hover{
   opacity: 0.5;
+}
+
+/* Title of the developer's work*/
+.work-title-block{
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  background-color: var(--light-blue);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.work-title-block h3{
+  font-size: 1.5em;
 }
 
 .images {
