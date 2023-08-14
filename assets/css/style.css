@@ -37,8 +37,8 @@ main {
 /*Style of the avatar image */
 #avatar {
   /*Sets the height and width of the image */
-  height: 20%;
-  flex: 100%;
+  max-width: 200px;
+  max-height: 200px;
   /*Sets the margin at the bottom of the image */
   margin-bottom: 25px;
   /*Sets the background position of the image */
