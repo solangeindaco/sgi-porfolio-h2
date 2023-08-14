@@ -7,7 +7,7 @@
 
 /* selector */
 body {
-  background-color: lemonchiffon;
+  background-color: lightblue;
 }
 
 header{
@@ -47,7 +47,6 @@ main {
 
 aside {
   flex: 30%;
-  background-color: #b9c6ae;
   padding: 20px;
   flex-wrap: wrap;
 }
@@ -55,12 +54,15 @@ aside {
 .content {
   flex: 70%;
   flex-wrap: wrap;
-  background-color: #fff;
   padding: 20px;
 }
 
 .border-right {
   border-right: 5px solid darkblue;
+}
+
+.border-right h2{
+  text-align: right;
 }
 
 .about-me{
@@ -77,34 +79,48 @@ aside {
   margin-bottom: 10px;
 }
 
+.my-work:first-child{
+  width:100%;
+  height: 20%;
+  border: 5px solid rgb(43, 197, 192);
+}
+
 .contact-me {
   /* Uses 10% the height of the viewport */
   height:10vh;
   margin-bottom: 10px;
 }
 
+.contact-me ul {
+  display: flex;
+  justify-content:space-evenly;
+  min-width: 300px;
+}
+
+.contact-me ul p{
+  text-decoration: underline;
+}
+
 #main-work{
   width:100%;
-  background-color: #fff;
-  padding: 20px;
-  height: 50%;
-  border: 1px solid black;
+  height: 20%;
+  border: 5px solid rgb(43, 197, 192);
 }
 
 /* Image Placeholders */
 .sample-img {
-  background-color: #fff;
-  padding: 20px;
-  height: 50%;
-  border: 1px solid black;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 20%;
+  border: 5px solid rgb(43, 197, 192);
 }
 
 footer {
-width: 100%;
-height: 100px;
-line-height: 100px;
-color: #f0ead6;
-background-color: #191970;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  color: #f0ead6;
+  background-color: #191970;
 }
 
 
