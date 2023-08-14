@@ -7,6 +7,7 @@ I learn:
     - how to struture an website using the following tags: header, nav,main, aside,footer.  
     - How to use semantic html tag to make the website more accessible.  
     - How to style a website using a CSS file.  
+    - How to use RESET css file to clear the browser's default formatting of HTML elements.
 
 ## Installation
 
