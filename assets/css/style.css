@@ -53,16 +53,36 @@ aside {
 
 .content {
   flex: 70%;
-  flex-wrap: wrap;
   padding: 20px;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  
 }
 
-.border-right {
+#about-me-side-bar{
+  /* Uses 30% the height of the viewport */
+  height: 30vh;
+  margin-bottom: 10px;
   border-right: 5px solid darkblue;
 }
 
-.border-right h2{
+#my-work-side-bar{
+  /* Uses 60% the height of the viewport */
+  height:60vh;
+  margin-bottom: 10px;
+  border-right: 5px solid darkblue;
+}
+
+#contact-me-side-bar {
+  /* Uses 10% the height of the viewport */
+  height:10vh;
+  margin-bottom: 10px;
+  border-right: 5px solid darkblue;
+}
+
+#about-me-side-bar h2, #my-work-side-bar h2, #contact-me-side-bar h2 {
   text-align: right;
+  padding-right: 2em;
 }
 
 .about-me{
@@ -79,13 +99,10 @@ aside {
   margin-bottom: 10px;
 }
 
-.my-work:first-child{
-  width:100%;
-  height: 20%;
-  border: 5px solid rgb(43, 197, 192);
-}
-
 .contact-me {
+  display: flex;
+  align-items: center;
+  width: 100%;
   /* Uses 10% the height of the viewport */
   height:10vh;
   margin-bottom: 10px;
@@ -93,8 +110,8 @@ aside {
 
 .contact-me ul {
   display: flex;
+  width: 100%;
   justify-content:space-evenly;
-  min-width: 300px;
 }
 
 .contact-me ul p{
@@ -109,10 +126,14 @@ aside {
 
 /* Image Placeholders */
 .sample-img {
-  flex-wrap: wrap;
   width: 50%;
   height: 20%;
   border: 5px solid rgb(43, 197, 192);
+}
+
+.images {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
