@@ -4,6 +4,10 @@
   --light-background-color: #dfe9f3;
   --light-blue:#79cede;;
   --light-grey: #697b7e;
+  --about-me-viewport-height:20vh;
+  --my-work-viewport-height:60vh;
+  --contact-me-viewport-height:10vh;
+  --photo-border-color:#9fc8cf;
 }
 
 /* universal*/
@@ -15,7 +19,8 @@
 
 /* selector */
 body {
-  background-color:var(--light-background-color);
+  min-height: 100vh;
+  background-color: var(--light-background-color);
 }
 
 header{
@@ -24,13 +29,12 @@ header{
   align-items: center;
   padding: 1%;
   background-color: var(--dark-background-color);
-  color: #fff;
 }
 
 header h1{
   padding-left: 10px;
-  font-size: 2em;
-  font-family:Arial, Helvetica, sans-serif
+  font-size: 2.5em;
+  font-family:Arial, Helvetica, sans-serif;
   background-color: var(--light-blue);
 }
 
@@ -51,20 +55,16 @@ main {
 
 
 #developer-photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   position:relative;
   width: 100%;
 }
 
-#developer-photo-title {
-  position:absolute;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: var(--light-blue);
-}
-
-/*Style of the avatar image */
-#avatar {
+/*Style of the photo image */
+#developer-photo img{
   /*Sets the height and width of the image */
   max-width: 200px;
   max-height: 200px;
@@ -72,6 +72,20 @@ main {
   margin-bottom: 25px;
   /*Sets the background position of the image */
   background-position: center;
+  border-radius: 65px 65px 65px 65px;
+  box-shadow: 5px 5px 5px var(--photo-border-color);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--photo-border-color);
+}
+
+#developer-photo-title {
+  background-color: var(--light-blue);
+}
+
+#developer-photo-title h2{
+  font-size: 2em;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 aside {
@@ -93,21 +107,21 @@ aside {
 
 #about-me-side-bar{
   /* Uses 30% the height of the viewport */
-  height: 30vh;
+  height: var(--about-me-viewport-height);;
   margin-bottom: 10px;
   border-right: 5px solid var(--light-grey);
 }
 
 #my-work-side-bar{
   /* Uses 60% the height of the viewport */
-  height:60vh;
+  height:var(--my-work-viewport-height);;
   margin-bottom: 10px;
   border-right: 5px solid var(--light-grey);
 }
 
 #contact-me-side-bar {
   /* Uses 10% the height of the viewport */
-  height:10vh;
+  height:var(--contact-me-viewport-height);
   margin-bottom: 10px;
   border-right: 5px solid var(--light-grey);
 }
@@ -119,7 +133,7 @@ aside {
 
 .about-me{
   /* Uses 30% the height of the viewport */
-  height: 30vh;
+  height: var(--about-me-viewport-height);
   margin-bottom: 10px;
 }
 
@@ -135,7 +149,7 @@ aside {
   /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
   flex: 1 0 200px;
   /* Uses 60% the height of the viewport */
-  height:60vh;
+  height:var(--my-work-viewport-height);
   margin-bottom: 10px;
 }
 
@@ -168,6 +182,11 @@ aside {
   font-size: 1.5em;
 }
 
+.work-title-block p{
+  font-size: 0.75em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 #main-work{
   width:80%;
   /* The child item with `flex-grow: 2` will grow to take up twice as much remaining space as the others. */
@@ -189,7 +208,7 @@ aside {
   justify-content: space-around;
   width: 100%;
   /* Uses 10% the height of the viewport */
-  height:10vh;
+  height:var(--contact-me-viewport-height);
   margin-bottom: 10px;
   text-decoration: underline;
 }
