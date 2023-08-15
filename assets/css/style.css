@@ -98,6 +98,7 @@ aside {
 aside h2{
   font-size: 2em;
   font-weight: bold;
+  margin-top: 1em;
   color: var(--light-grey);
 }
 
@@ -194,9 +195,8 @@ aside section h2{
 
 #main-work{
   width:80%;
-  /* The child item with `flex-grow: 2` will grow to take up twice as much remaining space as the others. */
-  /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
-  flex: 2 0 200px;
+  /* The main work with `flex-grow: 2` will grow to take up twice as much remaining space as the others. */
+  flex-grow: 2 0 auto;
   min-width: 100px;
 }
 
