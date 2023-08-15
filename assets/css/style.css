@@ -92,6 +92,9 @@ aside {
   flex: 30%;
   padding: 20px;
   flex-wrap: wrap;
+}
+
+aside h2{
   font-size: 2em;
   font-weight: bold;
   color: var(--light-grey);
@@ -99,8 +102,8 @@ aside {
 
 .content {
   flex: 70%;
-  padding: 20px;
   flex-wrap: wrap;
+  padding: 20px;
   gap: 10px 10px;
   
 }
@@ -217,12 +220,17 @@ footer {
   width: 100%;
   height: 100px;
   line-height: 100px;
-  color: #f0ead6;
+  color: #e0ce91;
   background-color: var(--dark-background-color);
 }
 
-/* This css rules will be applied when the viewport with is less than 480px, that it is for mobile screens*/
+/* This css rules will be applied when the viewport is less than 480px, that it is for mobile screens*/
 @media screen and (max-width: 480px){
+
+  aside h2{
+    font-size: 1em;
+    font-weight: bold;
+  }
 
   .work-title-block h3{
     font-size: 1em;
