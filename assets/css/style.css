@@ -47,6 +47,20 @@ main {
   display: flex;
 }
 
+
+#developer-photo {
+  position:relative;
+  width: 100%;
+}
+
+#developer-photo-title {
+  position:absolute;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--light-blue);
+}
+
 /*Style of the avatar image */
 #avatar {
   /*Sets the height and width of the image */
@@ -111,37 +125,17 @@ aside {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   /* Uses 60% the height of the viewport */
   height:60vh;
   margin-bottom: 10px;
 }
 
-.contact-me {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  /* Uses 10% the height of the viewport */
-  height:10vh;
-  margin-bottom: 10px;
-}
-
-.contact-me ul {
-  display: flex;
-  width: 100%;
-  justify-content:space-evenly;
-}
-
-.contact-me ul p{
-  text-decoration: underline;
-}
-
-
-
 /* Image Placeholders */
 .developer-work {
   position:relative;
-  width: 50%;
-  height: 20%;
+  width: 40%;
+  height: 40%;
   border: 5px solid var(--light-blue);
 }
 
@@ -165,13 +159,32 @@ aside {
   font-size: 1.5em;
 }
 
+#main-work{
+  width:80%;
+}
+
 .images {
   width: 100%;
   height: 100%;
 }
 
-#main-work{
-  width:100%;
+.contact-me {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* Uses 10% the height of the viewport */
+  height:10vh;
+  margin-bottom: 10px;
+}
+
+.contact-me ul {
+  display: flex;
+  width: 100%;
+  justify-content:space-evenly;
+}
+
+.contact-me ul p{
+  text-decoration: underline;
 }
 
 footer {
