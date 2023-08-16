@@ -4,14 +4,13 @@
 
 I deployed this repository to make my first Porfolio for future employers. I made this website from scratch. 
 I learn:  
-    - how to struture an website using the following tags: header, nav,main, aside,footer.  
-    - How to use semantic html tag to make the website more accessible.  
-    - How to style a website using a CSS file.  
+    - How to use Flex box and media queries to make my porfolio render well on all screen sizes and resolutions while ensuring good usability.  
+    - How to use CSS variables: a variable allow a value to be stored in one place, then referenced in multiple other places 
     - How to use RESET css file to clear the browser's default formatting of HTML elements.
 
 ## Installation
 
-Repository URL: https://github.com/solangeindaco/sgi-porforlio-h2  
+Repository URL: https://github.com/solangeindaco/sgi-porfolio-h2  
 Website URL:  https://solangeindaco.github.io/sgi-porfolio-h2/  
 
 ## Usage
