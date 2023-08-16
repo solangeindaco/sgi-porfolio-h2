@@ -51,10 +51,6 @@ nav ul li a {
   text-decoration: underline;
 }
 
-main {
-  display: flex;
-}
-
 
 #developer-photo {
   display: flex;
@@ -90,59 +86,40 @@ main {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-aside {
-  flex: 30%;
-  flex-wrap: wrap;
-}
-
-aside h2{
-  font-size: 2em;
-  font-weight: bold;
-  margin-top: 1em;
-  color: var(--light-grey);
-}
-
 .content {
-  flex: 70%;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   gap: 10px 10px;
-  
 }
 
-aside section{
+.left-titles {
   display: flex;
   flex: wrap;
   justify-content: flex-end;
   margin-bottom: 10px;
   border-right: 5px solid var(--light-grey);
+  width: 20%;
 }
 
-aside section h2{
+.left-titles h2 {
   margin-right:10px;
 }
 
-#about-me-side-bar{
-  /* Uses 30% the height of the viewport */
-  height: var(--about-me-viewport-height);
-}
-
-#my-work-side-bar{
-  /* Uses 60% the height of the viewport */
-  height:var(--my-work-viewport-height);
-}
-
-#contact-me-side-bar {
-  /* Uses 10% the height of the viewport */
-  height:var(--contact-me-viewport-height);
-}
-
-.about-me{
-  /* Uses 30% the height of the viewport */
-  height: var(--about-me-viewport-height);
+.right-content{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
   margin-bottom: 10px;
-}
+  width:100%;
+} 
 
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  width:100%;
+}
 
 .my-work{
   /* It makes my-work a flex box*/
@@ -154,9 +131,7 @@ aside section h2{
   align-items: center;
   /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
   flex: 1 0 200px;
-  /* Uses 60% the height of the viewport */
-  height:var(--my-work-viewport-height);
-  margin-bottom: 10px;
+  width: 80%;
 }
 
 /* Image Placeholders */
@@ -166,6 +141,13 @@ aside section h2{
   height: 40%;
   border: 5px solid var(--light-blue);
   margin: 10px;
+}
+
+#main-work{
+  width:80%;
+  /* The main work with `flex-grow: 2` will grow to take up twice as much remaining space as the others. */
+  flex-grow: 2 0 auto;
+  min-width: 100px;
 }
 
 /* Put the image more clear when the user hover over the image*/
@@ -193,27 +175,18 @@ aside section h2{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#main-work{
-  width:80%;
-  /* The main work with `flex-grow: 2` will grow to take up twice as much remaining space as the others. */
-  flex-grow: 2 0 auto;
-  min-width: 100px;
-}
-
 .images {
   width: 100%;
   height: 100%;
   min-width: 80px;
 }
 
-.contact-me {
+.contact-info{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  /* Uses 10% the height of the viewport */
-  height:var(--contact-me-viewport-height);
   margin-bottom: 10px;
   text-decoration: underline;
 }
