@@ -90,6 +90,14 @@ nav ul li a {
   flex-direction: column;
   padding: 20px;
   gap: 10px 10px;
+  width:100%;
+}
+
+main {
+  padding: 20px;
+  gap: 10px 10px;
+  width:100%;
+  height: 70%;
 }
 
 .row {
@@ -113,21 +121,22 @@ nav ul li a {
 }
 
 .right-content{
-  /* It makes the elements of the css class a flex box*/
-  display: flex;
-  flex-direction: row;
-  /* Forces elements to the next line if they don't fit */
-  flex-wrap: wrap;
   margin-left: 10px;
   margin-bottom: 10px;
-  width:100%;
+  width:80%;
 } 
 
 
 #developer-works-set{
+  /* It makes the elements of the css class a flex box*/
+  display: flex;
+  flex-direction: row;
+  /* Forces elements to the next line if they don't fit*/
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items:center;
-  width:100%;
+  width:80%;
+  height: 30%;
 }
 
 /* Style the individual work of the developer*/
@@ -137,19 +146,12 @@ nav ul li a {
   height: 40%;
   border: 5px solid var(--light-blue);
   margin: 10px;
-  /*The item is sized according to its width and height properties, 
-  but grows to absorb any extra free space in the flex container, 
-  and shrinks to its minimum size to fit the container. This is equivalent to setting "flex: 1 1 auto".*/
-  flex: 1;
-  
 }
 
 /* I used :first-child to select the main work of the developer*/
 .developer-individual-work:first-child{
-  width:100%;
-  height: 50%;
-  /* The main work with `flex-grow: 2` will grow to take up twice as much remaining space as the others. */
-  flex: 2;
+  width: 65%;
+  height: 35%;
 }
 
 /* I used the pseudo-class :hover to make the image more clear when the user hover over the developer work*/
@@ -211,6 +213,10 @@ footer {
   .work-title-block p{
     font-size: 0.5em;
   }
+
+  .contact-info {
+    flex-direction: column;
+  }
   
 }
 
@@ -223,10 +229,6 @@ footer {
 
   .about-me .right-content p{
     font-size: 0.75;
-  }
-
-  .contact-info {
-    flex-direction: column;
   }
 
 }
