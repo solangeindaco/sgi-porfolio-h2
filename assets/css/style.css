@@ -167,24 +167,27 @@ main {
   justify-content: space-evenly;
   /*Align the elements vertically in the center*/
   align-items:center;
-  width:80%;
+  width: 80%;
   height: 30%;
 }
 
 /* Style the individual work of the developer*/
 .developer-individual-work {
   position:relative;
+  /* It set the width of the developer's works*/
   width: 40%;
   height: 40%;
   /*Set the border to be light blue, solid and with the width of 5px*/
   border: 5px solid var(--light-blue);
-  margin: 10px;
+  margin: 20px;
 }
 
 /* I used :first-child to select the main work of the developer*/
 .developer-individual-work:first-child{
-  width: 65%;
-  height: 35%;
+  /* It set the width of the main work bigger than the others developer's works*/
+  width: 50%;
+  /* Sets how much of the flex container's remaining space should be assigned to the main work: it is larger than the others works*/
+  flex-grow: 2;
 }
 
 /* I used the pseudo-class :hover to make the image more clear when the user hover over the developer work*/
