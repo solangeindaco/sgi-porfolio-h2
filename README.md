@@ -19,6 +19,7 @@ Website URL:  https://solangeindaco.github.io/sgi-porfolio-h2/
 
 The following image shows the web application's appearance and functionality:
 
+![The Porfolio webpage includes a navigation bar, a header image, and images of the developer's works in the middle of the page. At the bottom there is the contact information.](./assets/images/porfolio-screenshot.png)
 
 
 
