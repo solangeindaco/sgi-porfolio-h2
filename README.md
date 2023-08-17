@@ -5,10 +5,10 @@
 I deployed this repository to make my first Porfolio for future employers. I made this website from scratch. 
 I learn:  
     - How to use Flex box and media queries to make my porfolio render well on all screen sizes and resolutions while ensuring good usability.  
-    - How to use CSS variables: a variable allow a value to be stored in one place, then referenced in multiple other places.    
-    - How to use a CSS pseudo-class. It is a keyword added to a selector that specifies a special state of the selected element(s). 
-    - How to use RESET css file to clear the browser's default formatting of HTML elements. 
-    - How to use box-styling to make the photo looks round.      
+    - How to use CSS variables: a variable allow a value to be stored in one place, then referenced in multiple other places.      
+    - How to use a CSS pseudo-class. It is a keyword added to a selector that specifies a special state of the selected element(s).   
+    - How to use RESET css file to clear the browser's default formatting of HTML elements.    
+    - How to use box-styling to make the photo looks round.        
 
 ## Installation
 
