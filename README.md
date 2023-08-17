@@ -29,7 +29,7 @@ To made this website, I used the following tutorials and files:
 
 HTML: https://developer.mozilla.org/en-US/docs/Web/HTML   
 CSS: https://developer.mozilla.org/en-US/docs/Web/CSS  
-Github: https://docs.github.com/en
+Github: https://docs.github.com/en  
 Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/  
 Eric Meyer CSS Reset file: https://meyerweb.com/eric/tools/css/reset/ 
 
