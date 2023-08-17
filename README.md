@@ -1,8 +1,8 @@
-# Porfolio: Solange Indaco
+# Portfolio: Solange Indaco
 
 ## Description
 
-I deployed this repository to make my first Porfolio for future employers. I made this website from scratch. 
+I deployed this repository to make my first Portfolio for future employers. I made this website from scratch. 
 I learn:  
     - How to use Flex box and media queries to make my porfolio render well on all screen sizes and resolutions while ensuring good usability.  
     - How to use CSS variables: a variable allow a value to be stored in one place, then referenced in multiple other places.      
@@ -19,7 +19,7 @@ Website URL:  https://solangeindaco.github.io/sgi-porfolio-h2/
 
 The following image shows the web application's appearance and functionality:
 
-![The Porfolio webpage includes a navigation bar, a header image, and images of the developer's works in the middle of the page. At the bottom there is the contact information.](./assets/images/porfolio-screenshot.png)
+![The Portfolio webpage includes a navigation bar, a header image, and images of the developer's works in the middle of the page. At the bottom there is the contact information.](./assets/images/porfolio-screenshot.png)
 
 
 
