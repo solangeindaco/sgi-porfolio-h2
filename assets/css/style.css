@@ -10,11 +10,12 @@
 /* universal*/
 * {
   box-sizing: border-box;
+  /*Specifies a prioritized list of one or more font family names for the website*/
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color:rgb(102, 106, 120);
 }
 
-/* selector */
+/* Set the background color to light blue for the body */
 body {
   width: 100%;
   background-color: var(--light-background-color);
@@ -22,10 +23,14 @@ body {
 
 header{
   width: 100%;
+  /* It makes the header a Flexbox*/ 
   display: flex;
+  /* Insert equal space between the developer's name and the navigation bar*/
   justify-content: space-between;
+  /*Align the elements vertically*/
   align-items: center;
   padding: 1%;
+  /* Set the background color to dark blue for the header */
   background-color: var(--dark-background-color);
 }
 
@@ -33,26 +38,36 @@ header h1{
   padding-left: 10px;
   font-size: 2.5em;
   font-family:Arial, Helvetica, sans-serif;
+  /* Set the background color of the developer's name */
   background-color: var(--light-blue);
+  /* Change the corner radius so the corner looks more round*/
   border-radius: 10px 10px 10px 10px;
 }
 
 nav ul {
+  /* It makes the list of links in the navigation bar a Flexbox*/ 
   display: flex;
+  /* Insert equal space between the links*/
   justify-content: space-between;
   min-width: 300px;
 }
 
 nav ul li a {
+  /*Set the color of the links*/
   color: var(--light-blue);
+  /*Insert an underline on the links*/
   text-decoration: underline;
 }
 
 
 #developer-photo {
+  /*It makes a flex box*/
   display: flex;
+  /*It makes a flex box, if the photo title doesn't fit it will go to the next line*/
   flex-wrap: wrap;
+  /* Insert space between the photo and the title*/
   justify-content: space-between;
+   /* Align vertically the photo and the title*/
   align-items: center;
   position:relative;
   width: 100%;
@@ -67,26 +82,36 @@ nav ul li a {
   margin-bottom: 25px;
   /*Sets the background position of the image */
   background-position: center;
+  /* Change the corner radius so the photo looks more round*/
   border-radius: 65px 65px 65px 65px;
+  /* Adds shadow effec to the photo*/
   box-shadow: 5px 5px 5px var(--photo-border-color);
+  /* Set line style of the border of the photo*/
   border-style: solid;
+   /* Set the width of the border of the photo*/
   border-width: 1px;
+  /* Set the color of the border of the photo*/
   border-color: var(--photo-border-color);
 }
 
 #developer-photo-title {
+  /* Change the corner radius so the title looks more round*/
   border-radius: 10px 10px 10px 10px;
+  /* Set the background color to light blue for the title */
   background-color: var(--light-blue);
 }
 
 #developer-photo-title h2{
+  /* Change the corner radius so the title's heading looks more round*/
   border-radius: 2%;
   font-size: 2em;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .content {
+  /*It makes the content a flex box*/
   display: flex;
+  /*Sets the rows (elements of css class .row) are placed as a column*/
   flex-direction: column;
   padding: 20px;
   gap: 10px 10px;
@@ -101,17 +126,21 @@ main {
 }
 
 .row {
+  /*It makes the content a flex box*/
   display: flex;
+  /*Sets the elements inside an element of class row to be placed as a row*/
   flex-direction: row;
   margin-bottom: 10px;
   width:100%;
 }
 
 .left-titles {
+  /*It makes the content a flex box*/
   display: flex;
-  flex: wrap;
+  /*It makes heading place on the right*/
   justify-content: flex-end;
   margin-bottom: 10px;
+  /*It set the right border to be light grey, solid and with the width of 5px*/
   border-right: 5px solid var(--light-grey);
   width: 20%;
 }
@@ -130,10 +159,13 @@ main {
 #developer-works-set{
   /* It makes the elements of the css class a flex box*/
   display: flex;
+  /* It makes the elements inside the flex box to be place as a row*/
   flex-direction: row;
   /* Forces elements to the next line if they don't fit*/
   flex-wrap: wrap;
+  /*Distribute the elements evenly*/
   justify-content: space-evenly;
+  /*Align the elements vertically in the center*/
   align-items:center;
   width:80%;
   height: 30%;
@@ -144,6 +176,7 @@ main {
   position:relative;
   width: 40%;
   height: 40%;
+  /*Set the border to be light blue, solid and with the width of 5px*/
   border: 5px solid var(--light-blue);
   margin: 10px;
 }
@@ -175,6 +208,7 @@ main {
 
 .work-title-block p{
   font-size: 0.75em;
+  /*Set the font of the parragraph*/
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -185,12 +219,17 @@ main {
 }
 
 .contact-info{
+  /* It makes the elements of the css class a flex box*/
   display: flex;
+  /* Forces elements to the next line if they don't fit*/
   flex-wrap: wrap;
+  /*Align the elements vertically in the center*/
   align-items: center;
+  /* Distribute items evenly. Start and end gaps are half the size of the space between each item */
   justify-content: space-around;
   width: 100%;
   margin-bottom: 10px;
+  /*Insert a line under the contact information*/
   text-decoration: underline;
 }
 
@@ -201,7 +240,7 @@ footer {
 }
 
 
-/* This css rules is for large smartphones - navbar changes color */
+/* This css rules are applied when the viewport is less than or equal to 768. For large smartphones  */
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
@@ -225,7 +264,7 @@ footer {
   
 }
 
-/* This css rules will be applied when the viewport is less than 480px, that it is for mobile screens*/
+/* This css rules will be applied when the viewport is less or equal than 480px, that it is for mobile screens*/
 @media screen and (max-width: 480px){
 
   header h1{
